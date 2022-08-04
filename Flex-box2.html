@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .container{
+            height:  400px;
+            max-width: 300px;
+            display: flex;
+            flex-wrap: wrap;
+            border: 1px solid black;
+        }
+
+        .item{
+            background-color: red;
+            padding: 0 5px;
+            flex: 1;
+            text-align: center;
+            color: white;
+            margin: 5px;
+        }
+
+        .flex-container{
+            display: flex;
+            border: 2px solid black;
+            max-width: 300px;
+        }
+
+        .item-grow{
+            background-color: orangered;
+            margin: 5px;
+            padding: 10px;
+            text-align: center;
+            color: aliceblue;
+        }
+
+        .fg-0{
+            flex-grow: 0;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        /*Flex Basic*/
+
+        .container-basis{
+            max-width: 300px;
+            border: 2px solid black;
+            display: flex;
+        }
+
+        .item-basis{
+            background-color: brown;
+            color: #fff;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .bAuto{
+            flex-basis: auto;
+        }
+
+        .fg-1{
+            flex-grow: 1;
+        }
+
+        .fg-2{
+            flex-grow: 2;
+        }
+
+        .container-flex{
+            display: flex;
+            border: 2px solid black;
+            max-width: 400px;
+        }
+
+        .itens-flex{
+            background-color: cornflowerblue;
+            color: #fff;
+            font-size: 24px;
+            text-align: center;
+            margin: 5px;
+        }
+
+        .flex-1{
+            flex: 1;
+        }
+
+        .flex-2{
+            flex: 2;
+        }
+
+    </style>
+</head>
+<body>
+
+    <p>Strech</p>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur a</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit.</div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. </div>
+        <div class="item">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Possimus amet tenetur illo natus ipsam laborum inventore id, distinctio sunt, aperiam molestiae blanditiis eligendi culpa fuga. Alias, vitae. Aliquid, animi blanditiis.</div>
+    </div>
+
+    <h2>Flex-Grow</h2>
+
+    <h3>Grow -0</h3>
+    <div class="flex-container ">
+        <div class="item-grow fg-0">A</div>
+        <div class="item-grow fg-0">B</div>
+        <div class="item-grow fg-0">C</div>
+        <div class="item-grow fg-0">D</div>
+    </div>
+
+    <h3>Grow -1</h3>
+    <div class="flex-container ">
+        <div class="item-grow fg-1">A</div>
+        <div class="item-grow fg-1">B</div>
+        <div class="item-grow fg-1">C</div>
+        <div class="item-grow fg-1">D</div>
+    </div>
+
+    <h2>FLex basic Auto & 1</h2>
+
+    <div class="container-basis">
+        <div class="item-basis bAuto fg-1">A</div>
+        <div class="item-basis bAuto fg-1">BBB</div>
+        <div class="item-basis bAuto fg-1">C</div>
+        <div class="item-basis bAuto fg-2">DEF</div>
+    </div>
+
+    <h2>FLEX :1</h2>
+    <div class="container-flex">
+        <div class="itens-flex flex-1">A</div>
+        <div class="itens-flex flex-1">BBB</div>
+        <div class="itens-flex flex-1">CC</div>
+        <div class="itens-flex flex-1">DFG</div>
+    </div>
+
+    <h2>FLEX :2 ou Mix</h2>
+    <div class="container-flex">
+        <div class="itens-flex flex-2">A</div>
+        <div class="itens-flex flex-2">BBB</div>
+        <div class="itens-flex flex-1">CC</div>
+        <div class="itens-flex flex-2">DFG</div>
+    </div>
+    
+</body>
+</html>
