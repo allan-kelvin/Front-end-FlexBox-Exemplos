@@ -1,10 +1,19 @@
 # Front-end-FlexBox-Exemplos
 Exemplos de FlexBox
-<body class="corpo">
-    <header class="cabecalho"></header>
-    <nav class="lateral"></nav>
-    <section class="meio"></section>
-    <section class="direita-cima"></section>
-    <section class="direita-baixo"></section>
-</body>
-</html>
+
+# FlexBox
+* Display Flex
+* Flex Direction
+* Flex row reverse
+* Flex column
+* Flex Wrap
+* Justify Content - Flex-Start
+* Justify Content - Flex-End
+* Justify Content - Center
+
+#Grid
+
+*Flex-Grow
+
+
+
