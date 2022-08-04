@@ -11,9 +11,9 @@ Exemplos de FlexBox
 * Justify Content - Flex-End
 * Justify Content - Center
 
-#Grid
+# Grid
 
-*Flex-Grow
+* Flex-Grow
 
 
 
